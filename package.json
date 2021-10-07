@@ -1,0 +1,23 @@
+{
+  "name": "drop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "drop.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldenfiredo/drop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goldenfiredo/drop/issues"
+  },
+  "homepage": "https://github.com/goldenfiredo/drop#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "require": "^2.4.20"
+  }
+}
