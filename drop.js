@@ -55,7 +55,7 @@ async function main() {
   }
 }
 
-async function worker(user, password, poap_bot_channel_id, message) {
+async function worker(user, password, channel_id, message) {
 
   let headers = {
     'user-agent': user_agent,
@@ -87,13 +87,13 @@ async function worker(user, password, poap_bot_channel_id, message) {
 
   headers['authorization'] = token
 
-  let _typing_url = typing_url.replace('_id', poap_bot_channel_id)
+  let _typing_url = typing_url.replace('_id', channel_id)
   await synchronous_request('POST', _typing_url, undefined, headers)
   
   await  wait(5000)
   
   console.log('send message ...')
-  let _messages_url = messages_url.replace('_id', poap_bot_channel_id)
+  let _messages_url = messages_url.replace('_id', channel_id)
   let nonce = MAGIC + new Date().getTime() + Math.floor(Math.random() * 65535)
   params = {
     "content": message,
