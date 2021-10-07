@@ -54,6 +54,10 @@
 
 8. 用其中的一个账号登录discord，在 用户设置 > 高级设置 里打开'开发者'模式，然后右键click你要投放地址的频道，弹出菜单里会有'复制ID'一项，点击它获得频道id
 
+![POAP bot](https://github.com/goldenfiredo/drop/blob/master/mode.png)
+
+![POAP bot](https://github.com/goldenfiredo/drop/blob/master/copy_id.png)
+
 9. 用如下命令运行脚本
 
   ```
